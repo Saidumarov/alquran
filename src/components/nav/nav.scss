@@ -1,0 +1,140 @@
+:root[data-theme="dark"] {
+  --nav: #1a202c;
+  --body-bg: #171923;
+  --color: white;
+  --svg: white;
+  --card: #2d3748;
+  --card1:#505d73dc;
+  --hover: #303e56;
+  --hover1: #00000077;
+  --border: white;
+  --num: #64ffac;
+  --modul: #455084d4;
+  --link: #2d37487d;
+  --linkhov:#2d3748;
+  --hov: #5d5c5c26;
+  --link1: #2D3748;
+  --loader:white;
+
+}
+:root[data-theme="light"] {
+  --nav: #edf2f7;
+  --body-bg: #ffffff;
+  --color: rgb(21, 20, 20);
+  --svg: black;
+  --card: white;
+  --card1:white;
+  --hover: #E9D8FD;
+  --hover1: #edf2f7;
+  --border: rgba(0, 0, 0, 0.283);
+  --num: #afa228;
+  --modul: #d8e1ea;
+  --link: #ffffff;
+  --link1: #ffffff;
+  --linkhov:#d4dce4c5;
+  --hov: #00000026;
+  --shad: 10px 10px 15px;
+  --loader:#805AD5;
+
+
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: var(--body-bg);
+}
+
+nav {
+  width: 100%;
+  height: 72px;
+  background-color: var(--nav);
+  position: fixed;
+  z-index: 3;
+}
+.bottom {
+  width: 100%;
+  height: 1px;
+  background-color: var(--color);
+  position: absolute;
+  bottom: 0px;
+  opacity: 0.2;
+}
+
+.nav {
+  width: 1200px;
+  height: 70px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav-name {
+  display: flex;
+  align-items: center;
+  margin-left: 50px;
+  @font-face {
+    font-family: rot;
+    src: url(../../Inter/static/Inter-Light.ttf);
+  }
+  h1 {
+    font-family: rot;
+    color: var(--color);
+    font-size: 28px;
+    padding-left: 15px;
+    transition: 0.2s;
+  }
+}
+.img {
+  width: 50px;
+  height: 50px;
+  background-color: var(--card);
+  position: relative;
+  border-radius: 12px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.2s;
+
+  img {
+    width: 65px;
+    height: 65px;
+  }
+}
+
+.modul {
+  width: 45px;
+  height: 45px;
+  background-color: var(--card);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  border-radius: 8px;
+  cursor: pointer;
+  overflow: hidden;
+  transition: 0.3s;
+}
+.modul:hover {
+  background-color: var(--modul);
+}
+.dark {
+  display: none;
+  svg {
+    width: 20px;
+    height: 20px;
+    padding-top: 3px;
+  }
+}
+.light {
+  svg {
+    width: 23px;
+    height: 23px;
+    stroke: var(--svg);
+    padding-top: 2px;
+  }
+}

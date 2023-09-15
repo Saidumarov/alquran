@@ -1,0 +1,359 @@
+.quron-wrap {
+  width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.quron-itme {
+  width: 250px;
+}
+.quran {
+  width: 1100px;
+  height: 590px;
+  background-color: var(--nav);
+  margin-top: 100px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.quran-s {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+
+.top {
+  height: 20px;
+  width: 80%;
+  margin-bottom: 10px;
+}
+.top1 {
+  height: 50px;
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 25px;
+  text-align: center;
+  color: #ebda3a;
+  font-family: rot;
+  font-size: 19px;
+}
+.bott {
+  margin-top: 50px;
+  width: 100%;
+}
+
+.quran-app {
+  width: 220px;
+  height: 100px;
+  background-color: var(--card);
+  border-radius: 10px;
+  margin-bottom: 30px;
+  margin-left: 1px;
+  position: relative;
+  text-align: center;
+  border: 1px solid var(--border);
+  transition: 0.2s;
+  box-shadow: 0 10px 15px var(--hov);
+}
+.quran-app:hover {
+  background-color: var(--hover);
+}
+.quran-app:hover .num {
+  background-color: var(--hover);
+}
+
+.num {
+  width: 40px;
+  height: 40px;
+  background-color: var(--hover1);
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: 40%;
+  border-radius: 10px;
+  font-size: 20px;
+  font-family: rot1;
+  color: var(--num);
+}
+
+.a {
+  text-decoration: none;
+}
+
+.mane {
+  color: var(--color);
+  font-family: sans-serif;
+  font-size: 18px !important;
+  padding-top: 50px;
+}
+.mane1 {
+  color: var(--color);
+  font-family: sans-serif;
+  font-size: 17px;
+}
+.input {
+  width: 450px;
+  position: absolute;
+  top: 20px;
+  z-index: 3;
+  margin-left: 190px;
+  display: flex;
+
+  .svg {
+    width: 80px;
+    height: 95%;
+    background-color: #edf2f7ac;
+    position: absolute;
+    right: 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    cursor: pointer;
+    margin-top: 1px;
+    transition: 0.2s;
+  }
+  .svg:hover {
+    background-color: #994cffd8;
+    svg {
+      fill: white;
+    }
+  }
+
+  input {
+    width: 100%;
+    height: 35px;
+    outline: none;
+    border-radius: 8px;
+    border: none;
+    padding-left: 30px;
+    padding-right: 100px;
+    font-size: 16px;
+    font-family: sans-serif;
+    background-color: var(--card1);
+    border: 1px solid var(--border);
+    overflow: hidden;
+    color: var(--color);
+    transition: 0.2s;
+  }
+  ::placeholder {
+    color: var(--color);
+  }
+}
+
+// ko'rinish
+
+.container {
+  width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-evenly;
+}
+.con-left {
+  width: 250px;
+}
+.con-cen {
+  width: 1100px;
+  height: 590px;
+  background-color: var(--nav);
+  border-radius: 8px;
+  overflow: hidden;
+  margin-top: 100px;
+  overflow-y: scroll;
+}
+
+.sura-name {
+  text-align: center;
+  padding-top: 10px;
+  font-size: 25px;
+  color: #dac720;
+}
+
+.oyat {
+  font-family: rot;
+  font-size: 25px;
+  background-color: #897c0b;
+  display: inline;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 5px 0 0 50px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 10px;
+  background-color: var(--link1);
+  box-shadow: var(--shad) var(--hov);
+  color: var(--color);
+  border: 1px solid var(--border);
+  transition: 0.2s;
+}
+
+.oyat-itme {
+  width: 95%;
+  transition: 0.2s;
+  border-radius: 8px;
+  margin: 0 auto;
+  margin-top: 20px;
+  border: 1px solid var(--border);
+  background-color: var(--card);
+  border-radius: 10px;
+}
+
+.oyat1 {
+  font-family: rot;
+  font-size: 20px;
+}
+.oyat-img {
+  background-image: url(../../assets/num.png);
+  width: 50px;
+  height: 50px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color);
+  font-family: rot1;
+}
+
+.bu {
+  height: 10px;
+}
+
+.text {
+  text-align: center;
+  padding-top: 20px;
+  font-size: 20px;
+  color: var(--color);
+  font-family: rot1;
+  width: 95%;
+  margin: 0 auto;
+}
+
+.aud {
+  width: 90%;
+  border-radius: 0px;
+  height: 45px;
+  margin: 20px auto 20px auto;
+  display: block;
+}
+
+.loading-w {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loading {
+  width: 200px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.l1,
+.l2,
+.l3,
+.l4,
+.l5 {
+  width: 10px;
+  height: 80px;
+  background-color: var(--loader);
+  border-radius: 8px;
+  transition: 1s all;
+}
+.l1 {
+  animation: loading linear infinite;
+  animation-duration: 1s;
+  animation-delay: 0s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+.l2 {
+  animation: loading1 linear infinite;
+  animation-duration: 1s;
+  animation-delay: 0.3s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+.l3 {
+  animation: loading2 linear infinite;
+  animation-duration: 1s;
+  animation-delay: 0.6s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+.l4 {
+  animation: loading3 linear infinite;
+  animation-duration: 1s;
+  animation-delay: 0.9s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+.l5 {
+  animation: loading4 linear infinite;
+  animation-duration: 1s;
+  animation-delay: 1.2s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+@keyframes loading {
+  0% {
+    height: 50px;
+  }
+}
+@keyframes loading1 {
+  0% {
+    height: 50px;
+  }
+}
+@keyframes loading2 {
+  0% {
+    height: 50px;
+  }
+}
+@keyframes loading3 {
+  0% {
+    height: 50px;
+  }
+}
+@keyframes loading4 {
+  0% {
+    height: 50px;
+  }
+}
+
+.back{
+  position: absolute;
+  top: 12px;
+  z-index: 4;
+  width: 45px;
+  height: 45px;
+  background-color: var(--card);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+  color: var(--color);
+  margin-left: 1050px;
+  svg{
+    width: 24px;
+    height: 24px;
+  }
+}
+
+.back:hover {
+  background-color: var(--modul);
+}

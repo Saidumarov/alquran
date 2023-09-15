@@ -1,0 +1,60 @@
+.link-page {
+  width: 270px;
+  height: 100%;
+  background-color: var(--nav);
+  position: fixed;
+  z-index: 1;
+}
+
+.link-itme {
+  width: 100%;
+  margin-top: 110px;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+@font-face {
+  font-family: rot1;
+  src: url(../../Inter/static/Inter-Medium.ttf);
+}
+.link {
+  width: 240px;
+  height: 55px;
+  background-color: var(--link);
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+  text-decoration: none;
+  font-family: rot1;
+  transition: 0.2s;
+  color: var(--color);
+}
+
+.link:hover {
+  background-color: var(--linkhov);
+}
+
+.audio {
+  width: 32px;
+  height: 32px;
+  object-fit: cover;
+  margin-left: 20px;
+  margin-right: 25px;
+}
+
+.kitob {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  margin-left: 15px;
+  margin-right: 12px;
+}
+
+.namoz {
+  width: 30px;
+  height: 30px;
+  object-fit: cover;
+  margin-left: 22px;
+  margin-right: 24px;
+}
