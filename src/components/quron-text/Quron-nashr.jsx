@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import axios from "axios";
+import "../quran-audio/quron.scss"
 import { Link, useParams } from "react-router-dom";
 const Quronnashr = () => {
     const [surah, setSurah] = useState(null); // Use an object for surah instead of an array
@@ -60,7 +61,7 @@ const Quronnashr = () => {
                    </Link>
                 </div>
               ) : (
-                <div className="loading-w">
+                <div className="loading-w1">
                   <div className="loading">
                     <div className="l1"></div>
                     <div className="l2"></div>

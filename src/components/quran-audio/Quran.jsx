@@ -69,7 +69,7 @@ function Taqvim() {
                  </Link>
               </div>
             ) : (
-              <div className="loading-w">
+              <div className="loading-w1">
                 <div className="loading">
                   <div className="l1"></div>
                   <div className="l2"></div>

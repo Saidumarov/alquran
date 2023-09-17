@@ -102,12 +102,4 @@ const Qurontext = () => {
 };
 
 export default Qurontext;
-/* {surah.ayahs.map((ayah) => (
-                <div key={ayah.number} className="oyat-itjme">
-                  <div className="oyat-imjg">
-                    <p className="oyajt1">{ayah.number}</p>
-                  </div>
-                  <p className="tjext">{ayah.text}</p>
-              
-                </div>
-              ))} */
+
