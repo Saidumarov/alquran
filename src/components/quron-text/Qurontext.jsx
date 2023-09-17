@@ -10,7 +10,7 @@ const Qurontext = () => {
     async function fetchData() {
       try {
         const response = await axios.get(
-          "http://api.alquran.cloud/v1/quran/quran-uthmani"
+          "https://api.alquran.cloud/v1/quran/quran-uthmani"
         );
         setSurahs(response.data.data.surahs);
         console.log(response.data.data.surahs);
