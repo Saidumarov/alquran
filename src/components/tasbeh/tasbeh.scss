@@ -64,6 +64,25 @@
   font-size: 18px;
   top: 15px;
 }
+.son1 {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 2px solid #068e0f;
+  color: white;
+  font-family: rot1;
+  position: absolute;
+  right: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 18px;
+  top: 15px;
+  color: white;
+  fill: white;
+
+}
 
 .jami {
   width: 150px;
@@ -140,6 +159,9 @@
   .son {
     right: 150px;
   }
+  .son1 {
+    right: 90px;
+  }
 }
 @media screen and (max-width: 650px) {
   .jami-n {
@@ -170,7 +192,10 @@
     top: 50px;
   }
   .son{
-    right: 200px;
+    right: 220px;
+  }
+  .son1{
+    right: 160px;
   }
 }
 
@@ -188,6 +213,17 @@
     top: 50px;
   }
   .son{
-    right: 130px;
+    right: 70px;
+    width: 40px;
+    height: 40px;
+    top: 5px;
+
+  }
+  .son1{
+    right: 10px;
+    width: 40px;
+    height: 40px;
+    top: 5px;
+
   }
 }
