@@ -1,9 +1,31 @@
+.quron-wrap {
+  width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.quron-itme {
+  width: 250px;
+}
+.quran {
+  width: 1100px;
+  margin-top: 115px;
+  border-radius: 8px;
+  background-color: var(--nav);
+  height: 550px;
+}
+
+
+
+
 .link-page {
   width: 270px;
   height: 100%;
   background-color: var(--nav);
   position: fixed;
-  z-index: 1;
+  z-index: 4;
+
 }
 
 .link-itme {
@@ -57,4 +79,86 @@
   object-fit: cover;
   margin-left: 22px;
   margin-right: 24px;
+}
+@media screen and (max-width: 1430px) {
+  .quron-wrap {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .quron-itme {
+    width: 250px;
+  }
+  .quran {
+    width: 70%;
+    background-color: var(--nav);
+    margin-top: 100px;
+    border-radius: 8px;
+  }
+
+}
+
+
+@media screen and (max-width: 1040px) {
+  .quron-itme {
+    display: none;
+  }
+  .quran {
+    width: 90%;
+    background-color: var(--nav);
+    margin-top: 100px;
+    border-radius: 8px;
+    height: 450px;
+  }
+
+
+
+}
+
+@media screen and (max-width:1040px) {
+
+  .bar1.active .barr:nth-child(2) {
+    opacity: 0;
+  }
+
+  .bar1.active .barr:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .bar1.active .barr:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .link-page.active {
+    left: 0;
+  }
+  .link-page{
+    transition: .5s all ease-in-out;
+  }
+  .barr {
+    width: 35px;
+    height: 3px;
+    background-color: var(--color);
+    margin: 5px auto 0 auto;
+  }
+  .bar1 {
+    display: block;
+    position: fixed;
+    right: 20px;
+    top: 20px;
+    z-index: 5;
+  }
+
+  .link-page{
+    left: -100%;
+  }
+
+}
+
+@media screen and (max-width:850px) {
+.link-itme{
+  margin-top: 150px;
+}
 }

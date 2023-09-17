@@ -1,0 +1,61 @@
+.quron-Text-w {
+  width: 100%;
+  height: 100%;
+  background-color: aliceblue;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.quran-app1 {
+  width: 220px;
+  height: 70px;
+  background-color: var(--card);
+  border-radius: 10px;
+  margin-bottom: 30px;
+  margin-left: 1px;
+  position: relative;
+  text-align: center;
+  border: 1px solid var(--border);
+  transition: 0.2s;
+  box-shadow: 0 10px 15px var(--hov);
+  display: grid;
+  align-items: center;
+}
+.quran-app1:hover {
+  background-color: var(--hover);
+}
+.mgane {
+  color: var(--color);
+  font-family: sans-serif;
+  font-size: 25px;
+}
+
+.mange1 {
+  color: var(--color);
+  font-family: sans-serif;
+  font-size: 17px;
+  margin-top: -20px;
+}
+
+.oyat-itme1 {
+  width: 95%;
+  transition: 0.2s;
+  border-radius: 8px;
+  margin: 0 auto;
+  margin-top: 20px;
+  border: 1px solid var(--border);
+  background-color: var(--card);
+  border-radius: 10px;
+  .text {
+    text-align: center;
+    font-size: 24px;
+    color: var(--color);
+    font-family: rot1;
+    width: 95%;
+    margin: 0 auto;
+  }
+}
+
+

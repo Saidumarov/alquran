@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./nav.scss";
 import img from "../../assets/all.png";
+import { Link } from "react-router-dom";
 const Nav = () => {
   const [oy, setOy] = useState();
   const [qu, setQu] = useState();
@@ -22,6 +23,7 @@ const Nav = () => {
     setOy("block");
     setQu("none");
   };
+
   return (
     <>
       <section>
@@ -29,10 +31,13 @@ const Nav = () => {
           <div className="nav">
             <div className="nav-name">
               <div className="img">
+              <Link to="/" className="a">
                 <img src={img} alt="" />
+                </Link>
               </div>
-              <h1>Al-Quran</h1>
+             <Link to="/" className="a"> <h1>Al-Quran</h1></Link>
             </div>
+        
             <div className="modul">
               <div
                 className="dark"

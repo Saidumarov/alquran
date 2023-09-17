@@ -10,11 +10,9 @@
 }
 .quran {
   width: 1100px;
-  height: 590px;
   background-color: var(--nav);
   margin-top: 100px;
   border-radius: 8px;
-  overflow: hidden;
 }
 .quran-s {
   width: 100%;
@@ -22,8 +20,6 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  overflow: hidden;
-  overflow-y: scroll;
 }
 
 .top {
@@ -52,7 +48,7 @@
   background-color: var(--card);
   border-radius: 10px;
   margin-bottom: 30px;
-  margin-left: 1px;
+  margin-left: 3px;
   position: relative;
   text-align: center;
   border: 1px solid var(--border);
@@ -99,9 +95,9 @@
 }
 .input {
   width: 450px;
-  position: absolute;
+  position: fixed;
   top: 20px;
-  z-index: 3;
+  z-index: 5;
   margin-left: 190px;
   display: flex;
 
@@ -252,6 +248,22 @@
   align-items: center;
   justify-content: center;
 }
+.loading-w1 {
+  width: 100%;
+  height: 450px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .loading {
+    width: 200px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: fixed;
+    margin-top: -50px;
+  }
+}
 
 .loading {
   width: 200px;
@@ -259,6 +271,7 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
+  position: fixed;
 }
 .l1,
 .l2,
@@ -333,7 +346,7 @@
   }
 }
 
-.back{
+.back {
   position: absolute;
   top: 12px;
   z-index: 4;
@@ -348,7 +361,7 @@
   transition: 0.3s;
   color: var(--color);
   margin-left: 1050px;
-  svg{
+  svg {
     width: 24px;
     height: 24px;
   }
@@ -356,4 +369,126 @@
 
 .back:hover {
   background-color: var(--modul);
+}
+
+@media screen and (max-width: 1430px) {
+  .quron-wrap {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .quron-itme {
+    width: 250px;
+  }
+  .quran {
+    width: 70%;
+    background-color: var(--nav);
+    margin-top: 100px;
+    border-radius: 8px;
+  }
+  .quran-s {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .input {
+    width: 380px;
+    position: fixed;
+    top: 20px;
+    margin-left: 190px;
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 1040px) {
+  .input {
+    width: 350px;
+    position: fixed;
+    top: 20px;
+    display: flex;
+    z-index: 3;
+  }
+}
+
+@media screen and (max-width: 1040px) {
+  .quron-itme {
+    display: none;
+  }
+  .quran {
+    width: 90%;
+    background-color: var(--nav);
+    margin-top: 100px;
+    border-radius: 8px;
+  }
+
+  .input {
+    margin-top: 80px;
+    margin-left: 30%;
+  }
+  .quran {
+    margin-top: 170px;
+  }
+  .in {
+    width: 100%;
+    height: 80px;
+    background-color: var(  --body-bg);
+    position: fixed;
+    top: -8px;
+    margin-top: 80px;
+    z-index: 3;
+    left: 0;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .input {
+    margin-top: 80px;
+    margin-left: 22%;
+    width: 350px;
+  }
+  .quran {
+    margin-top: 170px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .input {
+    margin-left: 20%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .input {
+    margin-left: 15%;
+  }
+}
+@media screen and (max-width: 550px) {
+  .input {
+    margin-left: 12%;
+  }
+}
+@media screen and (max-width: 496px) {
+  .quran-app {
+    width: 250px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .input {
+    margin-left: 15%;
+    width: 280px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .input {
+    margin-left: 10%;
+  }
 }

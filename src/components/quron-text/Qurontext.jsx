@@ -1,8 +1,8 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect, useState } from "react";
+import "./qurontext.scss";
 import axios from "axios";
 import { Link } from "react-router-dom";
-import "./quron.scss";
-function Taqvimitem() {
+const Qurontext = () => {
   const [surahs, setSurahs] = useState([]);
   const [searchTerm, setSearchTerm] = useState(""); // State for the search term
 
@@ -10,10 +10,10 @@ function Taqvimitem() {
     async function fetchData() {
       try {
         const response = await axios.get(
-          "https://api.alquran.cloud/v1/quran/ar.alafasy"
+          "http://api.alquran.cloud/v1/quran/quran-uthmani"
         );
         setSurahs(response.data.data.surahs);
-        console.log(response.data.data);
+        console.log(response.data.data.surahs);
       } catch (error) {
         console.error("Error fetching data:", error);
       }
@@ -21,8 +21,6 @@ function Taqvimitem() {
 
     fetchData();
   }, []);
-
-  // Function to handle search input change
   const handleSearchChange = (event) => {
     setSearchTerm(event.target.value);
   };
@@ -33,18 +31,18 @@ function Taqvimitem() {
       surah.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
       surah.englishName.toLowerCase().includes(searchTerm.toLowerCase())
   );
+
   return (
     <>
       <section>
         <div className="quron-wrap">
           <div className="quron-itme"></div>
-
           <div className="quran">
             <div className="top1">
               <h1>القرآن الكريم </h1>
             </div>
-        <div className="in">
-        <div className="input">
+          <div className="in">
+          <div className="input">
               <input
                 type="search"
                 placeholder="Search Quran"
@@ -69,32 +67,30 @@ function Taqvimitem() {
                 </svg>
               </div>
             </div>
-        </div>
+          </div>
             <div className="quran-s">
               <div className="top">
                 <h1> </h1>
               </div>
-
               {surahs.length > 0 ? (
                 filteredSurahs.map((surah) => (
-                  <Link to={`/surahs/${surah.number}`} className="a">
-                    <div key={surah.number} className="quran-app">
-                      <p className="num">{surah.number}</p>
-                      <p className="mane">{surah.name}</p>
-                      <p className="mane1">Name: {surah.englishName}</p>
+                  <Link to={`/quron/${surah.number}`} className="a">
+                    <div key={surah.number} className="quran-app1">
+                      <p className="mgane">{surah.name}</p>
+                      <p className="mange1">Name: {surah.englishName}</p>
                     </div>
                   </Link>
                 ))
               ) : (
                 <div className="loading-w1">
-                <div className="loading">
-                  <div className="l1"></div>
-                  <div className="l2"></div>
-                  <div className="l3"></div>
-                  <div className="l4"></div>
-                  <div className="l5"></div>
+                  <div className="loading">
+                    <div className="l1"></div>
+                    <div className="l2"></div>
+                    <div className="l3"></div>
+                    <div className="l4"></div>
+                    <div className="l5"></div>
+                  </div>
                 </div>
-              </div>
               )}
               <div className="bott"></div>
             </div>
@@ -103,6 +99,15 @@ function Taqvimitem() {
       </section>
     </>
   );
-}
+};
 
-export default Taqvimitem;
+export default Qurontext;
+/* {surah.ayahs.map((ayah) => (
+                <div key={ayah.number} className="oyat-itjme">
+                  <div className="oyat-imjg">
+                    <p className="oyajt1">{ayah.number}</p>
+                  </div>
+                  <p className="tjext">{ayah.text}</p>
+              
+                </div>
+              ))} */
