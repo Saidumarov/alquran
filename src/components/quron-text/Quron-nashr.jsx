@@ -9,7 +9,7 @@ const Quronnashr = () => {
       async function fetchData() {
         try {
           const response = await axios.get(
-            `http://api.alquran.cloud/v1/surah/${number}`
+            `https://api.alquran.cloud/v1/surah/${number}`
           );
           setSurah(response.data.data); // Store the Surah data, not just surahs
           console.log(response.data.data);
