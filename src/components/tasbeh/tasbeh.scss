@@ -7,13 +7,17 @@
 }
 .tasbeh {
   width: 100%;
-  height: 40%;
+  height: 50%;
   background-color: antiquewhite;
+  background-image: url(../../assets/b1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 8px 8px 0 0;
+  position: relative;
 }
 .tasbeh1 {
   width: 100%;
-  height: 60%;
-  //   background-color: rgb(178, 104, 7);
+  height: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -23,13 +27,13 @@
   width: 160px;
   height: 160px;
   border-radius: 50%;
-  // outline: 0;
+  font-size: 50px;
   border: 0;
-  font-size: 30px;
   font-family: rot1;
   cursor: pointer;
   background-color: #29d43a;
-  color: var(--color);
+  color: white;
+  font-size: 60px;
 }
 .tasbeh-btn:active {
   background-color: #42e753;
@@ -42,4 +46,148 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.son {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 2px solid #068e0f;
+  color: white;
+  font-family: rot1;
+  position: absolute;
+  right: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 18px;
+  top: 15px;
+}
+
+.jami {
+  width: 150px;
+  height: 150px;
+  border: 5px solid #38ff45;
+  border-radius: 50%;
+  color: white;
+  font-family: rot;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 35px;
+  position: absolute;
+  right: 200px;
+  top: 100px;
+}
+
+.jami-n {
+  font-size: 26px;
+  color: white;
+  font-family: rot1;
+  padding-left: 500px;
+  padding-top: 220px;
+}
+
+@media screen and (max-width: 1350px) {
+  .jami-n {
+    padding-left: 450px;
+  }
+  .jami {
+    right: 15%;
+  }
+}
+@media screen and (max-width: 1250px) {
+  .jami-n {
+    padding-left: 350px;
+  }
+}
+@media screen and (max-width: 1040px) {
+  .jami-n {
+    padding-left: 350px;
+    padding-top: 150px;
+  }
+  .jami {
+    width: 110px;
+    height: 110px;
+    right: 22%;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .jami-n {
+    padding-left: 340px;
+    padding-top: 170px;
+  }
+  .jami {
+    width: 110px;
+    height: 110px;
+    right: 15%;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .jami-n {
+    padding-left: 300px;
+    padding-top: 170px;
+    font-size: 20px;
+  }
+  .jami {
+    width: 110px;
+    height: 110px;
+    right: 15%;
+  }
+  .son {
+    right: 150px;
+  }
+}
+@media screen and (max-width: 650px) {
+  .jami-n {
+    padding-left: 250px;
+    padding-top: 170px;
+    font-size: 20px;
+  }
+  .jami {
+    width: 90px;
+    height: 90px;
+    right: 15%;
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 570px) {
+  .jami-n {
+    padding-left: 90px;
+    padding-top: 170px;
+    font-size: 20px;
+    color: #f67c01;
+  }
+  .jami {
+    width: 120px;
+    height: 120px;
+    right: 15%;
+    font-size: 30px;
+    top: 50px;
+  }
+  .son{
+    right: 200px;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .jami-n {
+    padding-left: 90px;
+    padding-top: 170px;
+
+  }
+  .jami {
+    width: 120px;
+    height: 120px;
+    right: 5%;
+    font-size: 30px;
+    top: 50px;
+  }
+  .son{
+    right: 130px;
+  }
 }

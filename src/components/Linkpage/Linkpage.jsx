@@ -4,8 +4,9 @@ import Nav from "../nav/Nav";
 import audio from "../../assets/audioo.png";
 import kitob from "../../assets/kitob.png";
 import namoz from "../../assets/namoz.png";
+import tasbeh from "../../assets/r.png";
+
 import "./link.scss";
-import Asosiypage from "./Asosiy-page";
 export const Linkpage = () => {
   const [isactiva, setActiva] = useState(false);
   const [isactiv, setActiv] = useState(false);
@@ -24,7 +25,6 @@ export const Linkpage = () => {
   return (
     <>
       <Nav />
-      {/* <Asosiypage /> */}
       <>
         <section>
           <div className={`bar1 ${isactiv ? "active" : ""}`} onClick={bar}>
@@ -47,7 +47,7 @@ export const Linkpage = () => {
                 Namoz vaqtlar
               </Link>
               <Link to="/tasbeh" className="link" onClick={bar1}>
-                <img src={namoz} alt="" className="namoz" />
+                <img src={tasbeh} alt="" className="namoz" />
                 Tasbeh
               </Link>
             </div>
