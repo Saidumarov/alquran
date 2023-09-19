@@ -11,7 +11,7 @@ const Asosiypage = () => {
 
           <div className="quran">
             <p className="quron-as-name">
-              Qur'on o'rganing va har kuni bir marta tilovat qiling.
+              Qur'onni o'rganing va har kuni bir marta tilovat qiling.
             </p>
             <div className="img-a">
               <img src={bga} alt="" />
