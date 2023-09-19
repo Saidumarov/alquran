@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { Link, useParams } from "react-router-dom";
-function Taqvim() {
+function Quron() {
   const [surah, setSurah] = useState(null);
   const { number } = useParams();
 
@@ -86,4 +86,4 @@ function Taqvim() {
   );
 }
 
-export default Taqvim;
+export default Quron;

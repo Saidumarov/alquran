@@ -7,18 +7,16 @@ import a from "../../assets/a.png";
 import sh from "../../assets/sh.png";
 import x from "../../assets/aa.png";
 
-function PrayerTimes() {
+function Namoz() {
   const [data, setData] = useState({
-    city: "",
+    city: "Toshkent", // Boshlang'ich holatida "Toshkent" tanlandi
     date: "",
     today: {},
     tomorrow: {},
   });
-  const [loading, setLoading] = useState(true);
 
   const handleCityChange = async (event) => {
     const selectedCity = event.target.value;
-    setLoading(true);
     console.log(selectedCity);
     try {
       const response = await fetch(
@@ -26,11 +24,15 @@ function PrayerTimes() {
       );
       const jsonData = await response.json();
       setData(jsonData);
-      setLoading(false);
     } catch (error) {
       console.error("Error fetching data:", error);
     }
   };
+
+  useEffect(() => {
+    // Tanlangan shahar o'zgartirilganda fetch qilish uchun useEffect ishga tushiriladi
+    handleCityChange({ target: { value: data.city } });
+  }, [data.city]); // data.city o'zganda useEffect ishga tushadi
 
   return (
     <div className="quron-wrap1">
@@ -89,4 +91,4 @@ function PrayerTimes() {
   );
 }
 
-export default PrayerTimes;
+export default Namoz;
