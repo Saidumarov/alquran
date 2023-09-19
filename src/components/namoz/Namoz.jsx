@@ -14,7 +14,7 @@ function PrayerTimes() {
     today: {},
     tomorrow: {},
   });
-  const [loading, setLoading] = useState(true); // Track loading state
+  const [loading, setLoading] = useState(true);
 
   const handleCityChange = async (event) => {
     const selectedCity = event.target.value;
@@ -53,17 +53,6 @@ function PrayerTimes() {
       </div>
       <div className="quron-itme1"></div>
       <div className="quran1">
-        {/* {loading ? (
-          <div className="loading-w">
-            <div className="loading">
-              <div className="l1"></div>
-              <div className="l2"></div>
-              <div className="l3"></div>
-              <div className="l4"></div>
-              <div className="l5"></div>
-            </div>
-          </div>
-        ) : ( */}
         <div>
           <p className="n-h2">Namoz vaqtlari {data.city}.</p>
           <div className="namoz-b">
@@ -93,7 +82,7 @@ function PrayerTimes() {
             </p>
           </div>
         </div>
-        {/* )} */}
+
         <div className="bot"></div>
       </div>
     </div>

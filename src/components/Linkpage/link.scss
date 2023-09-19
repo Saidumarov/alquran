@@ -16,17 +16,12 @@
   height: 550px;
 }
 
-
-
-
 .link-page {
   width: 270px;
   height: 100%;
   background-color: var(--nav);
   position: fixed;
   z-index: 4;
-
-
 }
 
 .link-itme {
@@ -81,6 +76,36 @@
   margin-left: 22px;
   margin-right: 24px;
 }
+
+.img-a {
+  width: 550px;
+  height: 420px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 8px;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+}
+.quron-as-name {
+  color: var(--color);
+  font-family: rot;
+  font-size: 22px;
+  text-align: center;
+  padding-top: 60px;
+  margin-bottom: -50px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.eslatma {
+  display: none;
+}
+
 @media screen and (max-width: 1430px) {
   .quron-wrap {
     width: 100%;
@@ -98,9 +123,7 @@
     margin-top: 100px;
     border-radius: 8px;
   }
-
 }
-
 
 @media screen and (max-width: 1040px) {
   .quron-itme {
@@ -113,13 +136,9 @@
     border-radius: 8px;
     height: 450px;
   }
-
-
-
 }
 
-@media screen and (max-width:1040px) {
-
+@media screen and (max-width: 1040px) {
   .bar1.active .barr:nth-child(2) {
     opacity: 0;
   }
@@ -135,8 +154,8 @@
   .link-page.active {
     left: 0;
   }
-  .link-page{
-    transition: .5s all ease-in-out;
+  .link-page {
+    transition: 0.4s all ease-in-out;
   }
   .barr {
     width: 35px;
@@ -152,14 +171,83 @@
     z-index: 5;
   }
 
-  .link-page{
+  .link-page {
     left: -100%;
   }
+  .eslatma {
+    position: absolute;
+    color: var(--color);
+    right: 25px;
+    top: 75px;
+    z-index: 4;
+    background-color: #ffd2f1e3;
+    padding: 15px 95px 15px 95px;
+    border-radius: 8px;
+    font-size: 18px;
+    font-family: rot;
+    transition: 0.6s;
+    display: block;
 
+    svg {
+      width: 60px;
+      height: 60px;
+      position: absolute;
+      top: -10px;
+      stroke: var(--color);
+      opacity: 0.7;
+      transform: rotate(-5deg);
+    }
+  }
 }
 
-@media screen and (max-width:850px) {
-.link-itme{
-  margin-top: 150px;
+@media screen and (max-width: 850px) {
+  .link-itme {
+    margin-top: 150px;
+  }
 }
+
+@media screen and (max-width: 700px) {
+  .img-a {
+    width: 450px;
+    height: auto;
+  }
+  .quron-as-name {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .img-a {
+    width: 400px;
+    height: auto;
+  }
+  .quron-as-name {
+    font-size: 18px;
+  }
+  .asosiy {
+    .quran {
+      margin-top: 130px;
+    }
+  }
+}
+@media screen and (max-width: 450px) {
+  .img-a {
+    width: 350px;
+    height: auto;
+  }
+  .quron-as-name {
+    font-size: 18px;
+  }
+  .eslatma {
+    padding: 15px 65px 15px 65px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .img-a {
+    width: 300px;
+    height: auto;
+  }
+  .quron-as-name {
+    font-size: 18px;
+  }
 }

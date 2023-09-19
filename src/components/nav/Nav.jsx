@@ -31,13 +31,15 @@ const Nav = () => {
           <div className="nav">
             <div className="nav-name">
               <div className="img">
-              <Link to="/" className="a">
-                <img src={img} alt="" />
+                <Link to="/" className="a">
+                  <img src={img} alt="" />
                 </Link>
               </div>
-             <Link to="/" className="a"> <h1>Al-Quran</h1></Link>
+              <Link to="/" className="a">
+                <h1>Al-Quran</h1>
+              </Link>
             </div>
-        
+
             <div className="modul">
               <div
                 className="dark"

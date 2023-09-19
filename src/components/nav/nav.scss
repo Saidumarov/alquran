@@ -123,7 +123,6 @@ nav {
   background-color: var(--modul);
 }
 .dark {
-  display: none;
   svg {
     width: 20px;
     height: 20px;
@@ -131,6 +130,7 @@ nav {
   }
 }
 .light {
+  display: none;
   svg {
     width: 23px;
     height: 23px;

@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import "./quron.scss";
 function Taqvimitem() {
   const [surahs, setSurahs] = useState([]);
-  const [searchTerm, setSearchTerm] = useState(""); // State for the search term
+  const [searchTerm, setSearchTerm] = useState(""); 
 
   useEffect(() => {
     async function fetchData() {
@@ -22,12 +22,10 @@ function Taqvimitem() {
     fetchData();
   }, []);
 
-  // Function to handle search input change
   const handleSearchChange = (event) => {
     setSearchTerm(event.target.value);
   };
 
-  // Filter the Surahs based on the search term for both name and englishName
   const filteredSurahs = surahs.filter(
     (surah) =>
       surah.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
@@ -35,7 +33,7 @@ function Taqvimitem() {
   );
   return (
     <>
-      <section>
+      <section className="as">
         <div className="quron-wrap">
           <div className="quron-itme"></div>
 

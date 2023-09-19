@@ -21,11 +21,10 @@ const Tasbe = () => {
     }
   };
 
-  const res = () =>{
-    setCounterr1(0)
-    setCounterr(0)
-
-  }
+  const res = () => {
+    setCounterr1(0);
+    setCounterr(0);
+  };
 
   return (
     <>

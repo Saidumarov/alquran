@@ -373,7 +373,6 @@
 }
 
 @media screen and (max-width: 1430px) {
-
   .quron-wrap {
     width: 100%;
     margin: 0 auto;
@@ -407,7 +406,6 @@
     background-color: var(--nav);
     margin-top: 100px;
     border-radius: 8px;
-   
   }
   .quran-s {
     width: 100%;
@@ -437,8 +435,7 @@
     z-index: 3;
   }
   .top1 {
-    padding-top: 90px;
-
+    padding-top: 20px;
   }
 }
 
@@ -463,8 +460,10 @@
     margin-top: 80px;
     margin-left: 30%;
   }
-  .quran {
-    margin-top: 170px;
+  .as {
+    .quran {
+      margin-top: 170px !important;
+    }
   }
   .in {
     width: 100%;
@@ -484,9 +483,7 @@
     margin-left: 22%;
     width: 350px;
   }
-  .quran {
-    margin-top: 1700px;
-  }
+
   .oyat {
     margin-top: 150px;
   }
@@ -525,6 +522,9 @@
   }
   .back {
     right: 135px;
+  }
+  .oyat-itme {
+    width: 90%;
   }
 }
 
